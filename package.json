@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive spec"
+    "test": "mocha-webpack --webpack-config webpack.config-test.js --recursive --require ./spec/test_helper.js \"spec\""
   },
   "keywords": [],
   "author": "",
@@ -15,11 +15,20 @@
     "babel-preset-es2015": "6.13.2",
     "babel-preset-react": "6.11.1",
     "chai": "3.5.0",
+    "css-loader": "0.25.0",
     "enzyme": "2.4.1",
-    "mocha": "3.1.0"
+    "jsdom-global": "2.1.0",
+    "less": "2.7.1",
+    "less-loader": "2.2.3",
+    "mocha": "3.1.0",
+    "mocha-webpack": "0.6.0",
+    "react-addons-test-utils": "15.3.2",
+    "style-loader": "0.13.1",
+    "webpack": "1.13.2",
+    "webpack-node-externals": "1.5.4"
   },
   "dependencies": {
-    "expect": "1.20.2",
-    "react": "15.3.2"
+    "react": "15.3.2",
+    "react-dom": "15.3.2"
   }
 }

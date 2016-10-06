@@ -1,11 +1,14 @@
 Mocha Demo
 ==========
 
-Very simple mocha demo
+How to test react components if it uses webpack.
 
 ```
 npm install
 npm test
 ```
 
-`npm test` runs `mocha --compilers js:babel-core/register spec` internally.
+References
+----------
+
+- https://github.com/zinserjan/mocha-webpack
